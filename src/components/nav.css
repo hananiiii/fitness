@@ -1,0 +1,23 @@
+li.text-with-gradual-underline {
+    position: relative;
+    font-weight: semibold; 
+    text-decoration: none; 
+    color:#C0C0C0; 
+    transition: all 0.3s ease; 
+  }
+  
+  li.text-with-gradual-underline::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    right: 100%; 
+    background-color: #4CAF50; 
+    height: 2px; 
+    transition: right 0.3s ease; 
+  }
+  
+  li.text-with-gradual-underline:hover::before {
+    right: 0; 
+  }
+  
